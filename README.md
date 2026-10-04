@@ -12,11 +12,11 @@ integration polls the cloud (every 60 s) using your Aera app account. It is buil
 
 1. Make sure [HACS](https://hacs.xyz/) is installed.
 2. In Home Assistant open **HACS → ⋮ (top right) → Custom repositories**.
-3. Add `https://github.com/graemer-org/aera-home` with type **Integration**, then click **Add**.
+3. Add `https://github.com/graemer-org/aera-home-ha` with type **Integration**, then click **Add**.
 4. Search HACS for **Aera for Home**, open it and click **Download**.
 5. Restart Home Assistant.
 
-[![Open your Home Assistant instance and open a repository inside HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=graemer-org&repository=aera-home&category=integration)
+[![Open your Home Assistant instance and open a repository inside HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=graemer-org&repository=aera-home-ha&category=integration)
 
 ### Manual
 
@@ -52,6 +52,11 @@ If your password changes, Home Assistant will ask you to reauthenticate.
 Controls update optimistically. The diffuser reports its real state on the next poll.
 
 ## Troubleshooting
+
+**"This integration does not support configuration via the UI"** means Home Assistant has not
+loaded the integration. Make sure you clicked **Download** in HACS (adding the repository alone
+does not install it), then restart Home Assistant. If it persists, check **Settings → System →
+Logs** for errors mentioning `aera`.
 
 **Settings → Devices & services → Aera for Home → ⋮ → Download diagnostics** dumps the raw Ayla
 properties of every diffuser, with email, password, MAC and IP redacted. Please attach the dump
