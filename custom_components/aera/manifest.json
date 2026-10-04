@@ -1,0 +1,13 @@
+{
+  "domain": "aera",
+  "name": "Aera for Home",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/graemer-org/aera-home",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/graemer-org/aera-home/issues",
+  "loggers": ["aera"],
+  "requirements": ["aeraforhome==0.4.0"],
+  "version": "0.1.0"
+}

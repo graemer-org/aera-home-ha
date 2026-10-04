@@ -1,0 +1,72 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Sign in with your Aera for Home app account.",
+        "data": {
+          "email": "[%key:common::config_flow::data::email%]",
+          "password": "[%key:common::config_flow::data::password%]"
+        }
+      },
+      "reauth_confirm": {
+        "title": "[%key:common::config_flow::title::reauth%]",
+        "description": "Enter the current password for {email}.",
+        "data": {
+          "password": "[%key:common::config_flow::data::password%]"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_account%]",
+      "reauth_successful": "[%key:common::config_flow::abort::reauth_successful%]"
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "cartridge_present": {
+        "name": "Cartridge",
+        "state": {
+          "on": "Inserted",
+          "off": "Missing"
+        }
+      }
+    },
+    "number": {
+      "intensity": {
+        "name": "Intensity"
+      },
+      "session_duration": {
+        "name": "Session duration"
+      }
+    },
+    "select": {
+      "fragrance": {
+        "name": "Fragrance"
+      }
+    },
+    "sensor": {
+      "fragrance": {
+        "name": "Fragrance"
+      },
+      "fragrance_remaining": {
+        "name": "Fragrance remaining"
+      },
+      "session_time_left": {
+        "name": "Session time left"
+      },
+      "error_condition": {
+        "name": "Error code"
+      }
+    },
+    "switch": {
+      "session": {
+        "name": "Session"
+      }
+    }
+  }
+}

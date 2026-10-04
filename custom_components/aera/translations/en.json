@@ -1,0 +1,72 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Sign in with your Aera for Home app account.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Authentication expired for {name}",
+        "description": "Enter the current password for {email}.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "Account is already configured",
+      "reauth_successful": "Re-authentication was successful"
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "cartridge_present": {
+        "name": "Cartridge",
+        "state": {
+          "on": "Inserted",
+          "off": "Missing"
+        }
+      }
+    },
+    "number": {
+      "intensity": {
+        "name": "Intensity"
+      },
+      "session_duration": {
+        "name": "Session duration"
+      }
+    },
+    "select": {
+      "fragrance": {
+        "name": "Fragrance"
+      }
+    },
+    "sensor": {
+      "fragrance": {
+        "name": "Fragrance"
+      },
+      "fragrance_remaining": {
+        "name": "Fragrance remaining"
+      },
+      "session_time_left": {
+        "name": "Session time left"
+      },
+      "error_condition": {
+        "name": "Error code"
+      }
+    },
+    "switch": {
+      "session": {
+        "name": "Session"
+      }
+    }
+  }
+}

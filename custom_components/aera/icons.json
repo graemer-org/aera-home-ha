@@ -1,0 +1,49 @@
+{
+  "entity": {
+    "fan": {
+      "diffuser": {
+        "default": "mdi:scent",
+        "state": {
+          "off": "mdi:scent-off"
+        }
+      }
+    },
+    "binary_sensor": {
+      "cartridge_present": {
+        "default": "mdi:bottle-tonic-outline"
+      }
+    },
+    "number": {
+      "intensity": {
+        "default": "mdi:gauge"
+      },
+      "session_duration": {
+        "default": "mdi:timer-cog-outline"
+      }
+    },
+    "select": {
+      "fragrance": {
+        "default": "mdi:flower"
+      }
+    },
+    "sensor": {
+      "fragrance": {
+        "default": "mdi:flower"
+      },
+      "fragrance_remaining": {
+        "default": "mdi:bottle-tonic"
+      },
+      "session_time_left": {
+        "default": "mdi:timer-sand"
+      },
+      "error_condition": {
+        "default": "mdi:alert-circle-outline"
+      }
+    },
+    "switch": {
+      "session": {
+        "default": "mdi:timer-outline"
+      }
+    }
+  }
+}
